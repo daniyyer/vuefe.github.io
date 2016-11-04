@@ -53,7 +53,7 @@ order: 7
 </div>
 ```
 
-`v-else` 元素必须紧跟在 `v-if` 或 `v-show` 元素的后面——否则它不能被识别。
+`v-else` 元素必须紧跟在 `v-if` 元素的后面——否则它不能被识别。
 
 ### v-show
 
@@ -65,7 +65,7 @@ order: 7
 
 不同的是有 `v-show` 的元素会始终渲染并保持在 DOM 中。`v-show` 是简单的切换元素的 CSS 属性 `display` 。
 
-<p class="tip">注意 `v-show` 不支持 `<template>` 语法。</p>
+<p class="tip">注意 `v-show` 不支持 `<template>` 语法，在其后使用 v-else 指令也不会生效。</p>
 
 
 ## v-if vs. v-show
